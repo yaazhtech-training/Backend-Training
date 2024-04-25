@@ -3,44 +3,44 @@ package com.yaazhtech.backendPro;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
     @SpringBootApplication
     abstract class Shape  {
-       abstract double area();
+       abstract int area(); //method declaration
 
    }
 class Square extends Shape  {
-    private double side;
+    private int side;
 
-    Square(double side) {
+    Square(int side) {
         this.side = side;
     }
 
     @Override
-    double area() {
+    int area() { //method implementation
         return side * side;
     }
 }
 
 class Rectangle extends Shape  {
-    private double length;
-    private double width;
+    private int length; //data varaiable
+    private int width;
 
-    Rectangle(double length, double width) {
+    Rectangle(int length, int width) {
         this.length = length;
         this.width = width;
     }
 
     @Override
-    double area() {
+    int area() {
         return length * width;
     }
 }
 
 public class AbstractExample {
     public static void main(String[] args) {
-        Square square = new Square(5);
-        Rectangle rectangle = new Rectangle(4, 6);
+        Square square = new Square(5); //25.0
+        Rectangle rectangle = new Rectangle(4, 6); //24.0
 
         System.out.println("Area of square: " + square.area());
-        System.out.println("Area of rectangle: " + rectangle.area());
+        System.out.println("Area of rectangle: " + rectangle.area()); //calling method
     }
 }
 
