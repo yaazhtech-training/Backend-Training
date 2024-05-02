@@ -1,7 +1,5 @@
 package com.yaazhtech.backendPro;
 
-
-
 class Operation {
     public int performOperation(int num1, int num2) {
         return 0; // Default implementation, overridden by subclasses
