@@ -1,5 +1,7 @@
 package com.yaazhtech.backendPro;
 
+import org.springframework.scheduling.SchedulingAwareRunnable;
+
 public class ConstructorExample {
     // Create a Main class
         int x;  // Create a class attribute
@@ -17,18 +19,25 @@ public class ConstructorExample {
 }
 
 //Parameterized
-
+/*
 public class Main {
   int modelYear;
+  // dataype-int, variable name=modelYear, Value-1972
   String modelName;
-
-  public Main(int year, String name) {
-    modelYear = year;
-    modelName = name;
+  byte ans=110;
+  short sh=32700;
+  
+    public Main(int year, String name) {
+    modelYear = year; //1969
+    modelName = name; //Mustang
   }
 
   public static void main(String[] args) {
-    Main myCar = new Main(1969, "Mustang");//
+    Main myCar = new Main(1972 , "Anitha");//
     System.out.println(myCar.modelYear + " " + myCar.modelName);
+
   }
 }
+
+ */
+
